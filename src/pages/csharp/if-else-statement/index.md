@@ -21,7 +21,7 @@ else
 
 int Price = 30;
 
-If (Price = 30)
+If (Price == 30)
 {
   Console.WriteLine("Price is equal to 30.");
 }
@@ -33,6 +33,22 @@ Else
 ```
 
 Since we already declared our int Price to be 30, this will be the expected output.
+
+There can be multiple conditions, outcomes that are expected and can be executed properly using an if-else statement.  Furthermore, if there is only one line following either the 'if' and/or the 'else' then '{}' are not needed, rather just a tab.
+
+```
+
+int Price = 30;
+
+If (Price == 30)
+  Console.WriteLine("Price is equal to 30.");
+
+Else if (Price > 30)
+  Console.WriteLine("Price is greater than 30.");
+
+Else
+  Console.WriteLine("Price is less than 30.");
+```
 
 ## Output
 ```
